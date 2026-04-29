@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Form Pendaftaran Kursus</title>
+</head>
+<body>
+    <table border="0" bgcolor="#ADD8E6" width="100%" cellpadding="10" cellspacing="0">
+        <tr>
+            <td align="center">
+                <h1 style="color: red; font-family: Arial;">Pendaftaran Kursus</h1>
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <table border="0" bgcolor="#808080" width="100%" cellpadding="0" cellspacing="0" style="color: white; font-family: Arial;">
+            <tr>
+                <td colspan="2" style="padding: 10px;"><h2>Data Diri</h2></td>
+            </tr>
+            <tr>
+                <td width="200" style="padding-left: 10px;">Nama</td>
+                <td> <input type="text" name="nama" size="30"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px;">Nim</td>
+                <td> <input type="text" name="nim" size="30" maxlength="9"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px;">E-mail</td>
+                <td> <input type="text" name="email" size="30"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px;">Tanggal Lahir</td>
+                <td> <input type="text" name="tgl_lahir" placeholder="hh/bb/tttt"></td>
+            </tr>
+            <tr>
+                <td valign="top" style="padding-left: 10px;">Jenis Kelamin</td>
+                <td> 
+                    &nbsp; <input type="radio" name="jk" value="L"> Laki-laki <br>
+                    &nbsp; <input type="radio" name="jk" value="P"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="padding-left: 10px;">Pilih Program Kursus</td>
+                <td>
+                    &nbsp;&nbsp;<input type="checkbox" name="kursus" value="C#"> C# <br>
+                    &nbsp;&nbsp;<input type="checkbox" name="kursus" value="Java"> Java <br>
+                    &nbsp;&nbsp;<input type="checkbox" name="kursus" value="SQL"> SQL <br>
+                    &nbsp;&nbsp;<input type="checkbox" name="kursus" value="HTML_PHP"> HTML dan PHP
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px; padding-bottom: 40px;">Pilihan Hari/Jam Kursus</td>
+                <td style="padding-bottom: 40px;"> 
+                    <select name="jadwal">
+                        <option>Senin - Rabu/09.00 - 11.00</option>
+                        <option>Selasa - Kamis/13.00 - 15.00</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table border="0" bgcolor="#FA8072" width="100%" cellpadding="10" cellspacing="0" style="font-family: Arial;">
+            <tr>
+                <td>
+                    <b>Komentar Anda</b><br>
+                    <textarea name="komentar" cols="80" rows="5"></textarea>
+                    <br><br>
+                    <input type="reset" value="Reset" name="Reset">
+                    <input type="submit" value="Submit" name="Submit">
+                    <input type="button" value="Cancel" name="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
