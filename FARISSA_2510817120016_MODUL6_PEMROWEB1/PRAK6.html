@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JPhotography</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 20px;
+      color: #333 !important;
+      letter-spacing: 1px;
+    }
+    .navbar-nav > li > a {
+      color: #333 !important;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li.active > a {
+      color: #000 !important;
+      background-color: transparent !important;
+      font-weight: bold;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 50px 15px 30px;
+    }
+    .hero-section h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .hero-section h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .hero-section p.subtitle {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    .filter-section {
+      text-align: center;
+      margin: 20px 0 25px;
+    }
+    .filter-section .btn {
+      border-radius: 20px;
+      font-size: 12px;
+      padding: 5px 16px;
+      margin: 2px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: #333;
+    }
+    .filter-section .btn.active,
+    .filter-section .btn:focus {
+      background-color: #fff;
+      color: #333;
+      border-color: #999;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .gallery-section {
+      padding: 0 15px 40px;
+    }
+    .gallery-section .row {
+      margin: 0 -3px;
+    }
+    .gallery-section [class*="col-"] {
+      padding: 3px;
+    }
+    .gallery-section img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(30%);
+      transition: filter 0.3s ease;
+    }
+    .gallery-section img:hover {
+      filter: grayscale(0%);
+    }
+
+    .img-placeholder {
+      width: 100%;
+      height: 180px;
+      background-color: #bbb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 1px solid #eee;
+    }
+    footer .brand-name {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+    footer .copyright {
+      font-size: 11px;
+      color: #999;
+      margin-bottom: 12px;
+    }
+    footer .social-icons a {
+      color: #555;
+      font-size: 16px;
+      margin: 0 5px;
+      text-decoration: none;
+    }
+    footer .social-icons a:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">JPhotography</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-section">
+    <h2>Hi, Hello.. I Am JohnDas...!</h2>
+    <h3>I Travel Around The World To Get The Best Photos.!</h3>
+    <p class="subtitle">Award Winning Photographer / Cinematographer / Writer</p>
+  </div>
+
+  <div class="filter-section">
+    <button class="btn active">All</button>
+    <button class="btn">Landscape</button>
+    <button class="btn">Portrait</button>
+    <button class="btn">Product</button>
+  </div>
+
+  <div class="container-fluid gallery-section">
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://wallpaperaccess.com/full/4696113.jpg" alt="Photo 1">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Powerpuff-Girls.jpg" alt="Photo 2">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://images5.alphacoders.com/115/thumbbig-1151445.webp" alt="Photo 3">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://wallpapercave.com/wp/wp1875424.jpg" alt="Photo 4">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://wallpapers.com/images/hd/superhero-cartoon-network-powerpuff-girls-rylb9457lq7r63s5.jpg" alt="Photo 5">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://cdn.suwalls.com/wallpapers/cartoons/the-powerpuff-girls-9136-2560x1600.jpg" alt="Photo 6">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://cdn.britannica.com/08/190808-050-CB26C47B/The-Powerpuff-Girls-Bubbles-Blossom-Buttercup.jpg" alt="Photo 7">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://wallpapers.com/images/hd/cute-cartoon-network-powerpuff-girls-qhe56hq3sg9mdn5g.jpg" alt="Photo 8">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://wallpapercave.com/wp/wp1875451.jpg" alt="Photo 9">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://images6.alphacoders.com/128/1283473.jpg" alt="Photo 10">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://cdn.wallpapersafari.com/52/80/cdLGR4.jpg" alt="Photo 11">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://image.tmdb.org/t/p/original/z460fWshQixsRXAvWwOhOT6HNEj.jpg" alt="Photo 12">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://i.pinimg.com/originals/ec/ce/bb/eccebb0bf3fa5c6d9403c02a501f20e8.jpg" alt="Photo 13">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://images8.alphacoders.com/115/1151521.jpg" alt="Photo 14">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://wallpapers.com/images/hd/the-powerpuff-girls-blossom-in-action-81ymk1x3552omfa3.jpg" alt="Photo 15">
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://images8.alphacoders.com/115/thumb-1920-1151520.jpg" alt="Photo 16">
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="brand-name">JPhotography</div>
+    <div class="copyright">© Copyrights 2019 All Rights Reserved.</div>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-cog"></i></a>
+      <a href="#"><i class="fa fa-behance"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-vimeo-square"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
